@@ -1,0 +1,25 @@
+# Librus Email Forwarder Configuration
+
+# Librus credentials
+librus_username: "your_librus_username"
+librus_password: "your_librus_password"
+
+# Email recipients (list of email addresses to forward messages to)
+recipients:
+  - "your_email@example.com"
+  - "another_email@example.com"  # Optional additional recipient
+
+# Email configuration
+sender_email: "your_email@example.com"  # The email address messages will be sent from
+
+# SMTP Server settings
+smtp_server: "smtp.example.com"  # e.g., smtp.gmail.com, smtp.office365.com
+smtp_port: 587  # Usually 587 for TLS or 465 for SSL
+smtp_username: "your_email@example.com"  # Often the same as sender_email
+smtp_password: "your_email_password"  # For Gmail, you may need to use an App Password
+
+# Forwarding options
+only_unread: true  # Set to false to forward all messages, not just unread ones
+
+# Server configuration
+check_interval: 15  # How often to check for new messages (in minutes) 
